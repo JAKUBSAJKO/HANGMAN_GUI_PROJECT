@@ -1,0 +1,10 @@
+1. Walidacja -> co podaje użytkownik
+    a. nie może podać cyfry
+    b. nie może podać kilku liter na raz
+    c. nie może podać znaku
+    d. może podać malą lub dużo - nie ma to znaczenia
+
+2. Nie może wpisać drugi raz tej samej litery
+3. Dodaj listę słów, aby gra losowała hasło (spróbuj znaleźć jakoś bilbiotek, bądź API)
+4. Możliwość restartu po jej zakończeniu -> jeśli restart to hasło nie może się powtórzyć
+5. Pytanie na start: jaki poziom -> łatwy(7), średni(5), trudny(3)
