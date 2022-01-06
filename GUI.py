@@ -7,6 +7,9 @@ import words
 
 # Variable
 word = ''
+used_letter = []
+user_word = []
+numLives = 5
 
 root = Tk()
 root.title("HANGMAN")
@@ -16,10 +19,182 @@ root.geometry("980x540")
 
 def game_window(word):
     def letter_info(letter):
+        def used_button(button, letter, row, col, px, py):
+            button = TkinterCustomButton(master=game, text=letter, hover_color="#5a0600",
+                                       fg_color="#5a0600", text_color="#000000", width=width_btn, height=height_btn,
+                                       corner_radius=0, text_font=("montserrat", 14, "bold"))
+            button.grid(row=row, column=col, pady=(px, py))
+            used_letter.append(letter)
+
+        def find_index(word, letter):
+            indexes = []
+
+            for index, letter_in_word in enumerate(word):
+                if letter.lower() == letter_in_word:
+                    indexes.append(index)
+
+            return indexes
+
+        def check_pasword(word, letter):
+            global numLives
+
+            found_indexes = find_index(word, letter)
+
+            if len(found_indexes) == 0:
+                numLives -= 1
+                print("Liczba żyć", numLives)
+            else:
+                print("jest")
+                for index in found_indexes:
+                    user_word[index] = letter
+
+                displayPasswordLabel = Label(game, text=" ".join(user_word), font=("montserrat", 44, "bold"))
+                displayPasswordLabel.grid(row=1, columnspan=16)
+
         turn = letter
         test = Label(game, text="Kliknięcto literę -> " + letter).grid(row=2, columnspan=5)
 
+        if letter == "A":
+            used_button(btn1, letter, 4, 0, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ą":
+            used_button(btn2, letter, 4, 1, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "B":
+            used_button(btn3, letter, 4, 2, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "C":
+            used_button(btn4, letter, 4, 3, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ć":
+            used_button(btn5, letter, 4, 4, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "D":
+            used_button(btn6, letter, 4, 5, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "E":
+            used_button(btn7, letter, 4, 6, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ę":
+            used_button(btn8, letter, 4, 7, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "F":
+            used_button(btn9, letter, 4, 8, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "G":
+            used_button(btn10, letter, 4, 9, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "H":
+            used_button(btn11, letter, 4, 10, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "I":
+            used_button(btn12, letter, 4, 11, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "J":
+            used_button(btn13, letter, 4, 12, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "K":
+            used_button(btn14, letter, 4, 13, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "L":
+            used_button(btn15, letter, 4, 14, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ł":
+            used_button(btn16, letter, 4, 15, 20, 10)
+            check_pasword(word, letter)
+
+        if letter == "M":
+            used_button(btn17, letter, 5, 0, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "N":
+            used_button(btn18, letter, 5, 1, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ń":
+            used_button(btn19, letter, 5, 2, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "O":
+            used_button(btn20, letter, 5, 3, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ó":
+            used_button(btn21, letter, 5, 4, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "P":
+            used_button(btn22, letter, 5, 5, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "R":
+            used_button(btn23, letter, 5, 6, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "S":
+            used_button(btn24, letter, 5, 7, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ś":
+            used_button(btn25, letter, 5, 8, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "T":
+            used_button(btn26, letter, 5, 9, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "U":
+            used_button(btn27, letter, 5, 10, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "W":
+            used_button(btn28, letter, 5, 11, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Y":
+            used_button(btn29, letter, 5, 12, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Z":
+            used_button(btn30, letter, 5, 13, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ź":
+            used_button(btn31, letter, 5, 14, 10, 10)
+            check_pasword(word, letter)
+
+        if letter == "Ż":
+            used_button(btn32, letter, 5, 15, 10, 10)
+            check_pasword(word, letter)
+
+
+        if len(used_letter) == 32:
+            print("Prawda")
+
+        print("Użyte - >", used_letter)
+
+
     def back():
+        global used_letter
+        global user_word
+
+        used_letter = []
+        user_word = []
         game.destroy()
         root.deiconify()
 
@@ -29,11 +204,17 @@ def game_window(word):
     game.geometry("980x540")
 
     logoLabelGame = Label(game, image=logo)
-    logoLabelGame.grid(row=0, columnspan=15, padx=(289, 289), pady=(60, 60))
+    logoLabelGame.grid(row=0, columnspan=16, padx=(289, 289), pady=(60, 60))
 
     # Letters Buttons
     width_btn = 40
     height_btn = 60
+
+    # Display Password
+    displayPasswordLabel = Label(game, text=" ".join(user_word), font=("montserrat", 44, "bold"))
+    displayPasswordLabel.grid(row=1, columnspan=16)
+
+    test = Label(game, text=word).grid(row=2)
 
     btn1 = TkinterCustomButton(master=game, text="A", command=lambda: letter_info("A"), hover_color="#a85c16",
                                fg_color="#d87215", text_color="#ffffff", width=width_btn, height=height_btn,
@@ -164,11 +345,9 @@ def game_window(word):
                                 corner_radius=0, text_font=("montserrat", 14, "bold"))
     btn32.grid(row=5, column=15)
 
-    Lab11 = Label(game, text=word)
-    Lab11.grid(row=6, columnspan=5)
-
-    Btn = Button(game, text='Back', command=back)
-    Btn.grid(row=7, columnspan=5)
+    exitBtn = TkinterCustomButton(master=game, text="EXIT", command=back, hover_color="#730000", fg_color="#9a0000",
+                                  width=120, height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
+    exitBtn.grid(row=6, columnspan=16, pady=(20, 10))
 
 
 def exit_game():
@@ -178,22 +357,52 @@ def exit_game():
 
 def cat_sport():
     word = random.choice(words.sport)
+
+    for _ in word:
+        user_word.append("_")
+
+    numLives = 5
+
     game_window(word)
 
 def cat_math():
     word = random.choice(words.matematyka)
+
+    for _ in word:
+        user_word.append("_")
+
+    numLives = 5
+
     game_window(word)
 
 def cat_music():
     word = random.choice(words.muzyka)
+
+    for _ in word:
+        user_word.append("_")
+
+    numLives = 5
+
     game_window(word)
 
 def cat_literature ():
     word = random.choice(words.literatura)
+
+    for _ in word:
+        user_word.append("_")
+
+    numLives = 5
+
     game_window(word)
 
 def cat_movies_and_series():
     word = random.choice(words.filmy_seriale)
+
+    for _ in word:
+        user_word.append("_")
+
+    numLives = 5
+
     game_window(word)
 
 # Logo And Question Label

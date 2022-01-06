@@ -5,13 +5,32 @@ from tkinter_custom_button import TkinterCustomButton
 root = Tk()
 root.geometry("340x200")
 
-label = Label(root, text="to jest test")
-label.grid(row=0, columnspan=3)
-btn1 = TkinterCustomButton(master=root)
-btn1.grid(row=1, column=0)
-btn2 = TkinterCustomButton(master=root)
-btn2.grid(row=2, column=1)
-btn3 = TkinterCustomButton(master=root)
-btn3.grid(row=3, column=2)
+word = 'abba'
+click = 'd'
+user_word = []
+
+def find_index(word, letter):
+    indexes = []
+
+    for index, letter_in_word in enumerate(word):
+        if letter == letter_in_word:
+            indexes.append(index)
+
+    return indexes
+
+for _ in word:
+    user_word.append("_")
+
+
+
+while True:
+    found_indexes = find_index(word, click)
+
+    if len(found_indexes) == 0:
+        print("Nie ma")
+    else:
+        print("jest")
+
+    break
 
 root.mainloop()
