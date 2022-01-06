@@ -36,6 +36,7 @@ def game_window(word):
             return indexes
 
         def check_pasword(word, letter):
+
             global numLives
 
             found_indexes = find_index(word, letter)
@@ -43,6 +44,10 @@ def game_window(word):
             if len(found_indexes) == 0:
                 numLives -= 1
                 print("Liczba żyć", numLives)
+
+                if numLives == 0:
+                    lose = messagebox.showerror('HANGMAN', 'Niestety nie udało się zgadnąć hasła :(')
+
             else:
                 print("jest")
                 for index in found_indexes:
@@ -50,6 +55,16 @@ def game_window(word):
 
                 displayPasswordLabel = Label(game, text=" ".join(user_word), font=("montserrat", 44, "bold"))
                 displayPasswordLabel.grid(row=1, columnspan=16)
+
+                if "".join(user_word).lower() == word:
+                    win = messagebox.showinfo('HANGMAN', 'GRATULACJĘ! Udało ci się zgadnąć hasło :)')
+                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?')
+                    if next_game == 1:
+                        game.destroy()
+                        root.deiconify()
+                    else:
+                        game.destroy()
+                        root.destroy()
 
         turn = letter
         test = Label(game, text="Kliknięcto literę -> " + letter).grid(row=2, columnspan=5)
