@@ -3,34 +3,14 @@ from PIL import ImageTk, Image
 from tkinter_custom_button import TkinterCustomButton
 
 root = Tk()
-root.geometry("340x200")
+root.geometry("980x540")
 
-word = 'abba'
-click = 'd'
-user_word = []
+img = ImageTk.PhotoImage(Image.open('files/logo.png'))
+myLabel = Label(root, image=img)
+myLabel.grid(row=0, columnspan=16, padx=(289, 289), pady=(80, 60))
 
-def find_index(word, letter):
-    indexes = []
-
-    for index, letter_in_word in enumerate(word):
-        if letter == letter_in_word:
-            indexes.append(index)
-
-    return indexes
-
-for _ in word:
-    user_word.append("_")
-
-
-
-while True:
-    found_indexes = find_index(word, click)
-
-    if len(found_indexes) == 0:
-        print("Nie ma")
-    else:
-        print("jest")
-
-    break
+img2 = ImageTk.PhotoImage(Image.open('files/numLives_1.png'))
+myLabel1 = Label(root, image=img2)
+myLabel1.grid(row=0, columnspan=16, padx=(800, 0), pady=(60, 0))
 
 root.mainloop()

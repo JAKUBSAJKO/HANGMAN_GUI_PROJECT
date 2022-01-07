@@ -7,7 +7,6 @@ import words
 
 # Variable
 word = ''
-used_letter = []
 user_word = []
 numLives = 5
 
@@ -16,7 +15,6 @@ root.title("HANGMAN")
 root.geometry("980x540")
 
 # Function
-
 def game_window(word):
     def letter_info(letter):
         def used_button(button, letter, row, col, px, py):
@@ -24,7 +22,6 @@ def game_window(word):
                                        fg_color="#5a0600", text_color="#000000", width=width_btn, height=height_btn,
                                        corner_radius=0, text_font=("montserrat", 14, "bold"))
             button.grid(row=row, column=col, pady=(px, py))
-            used_letter.append(letter)
 
         def find_index(word, letter):
             indexes = []
@@ -36,7 +33,7 @@ def game_window(word):
             return indexes
 
         def check_pasword(word, letter):
-
+            global user_word
             global numLives
 
             found_indexes = find_index(word, letter)
@@ -45,8 +42,39 @@ def game_window(word):
                 numLives -= 1
                 print("Liczba żyć", numLives)
 
+                if numLives == 4:
+                    numLivesLabel = Label(game, image=num_lives_4)
+                    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
+
+                if numLives == 3:
+                    numLivesLabel = Label(game, image=num_lives_3)
+                    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
+
+                if numLives == 2:
+                    numLivesLabel = Label(game, image=num_lives_2)
+                    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
+
+                if numLives == 1:
+                    numLivesLabel = Label(game, image=num_lives_1)
+                    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
+
+                if numLives == 0:
+                    numLivesLabel = Label(game, image=num_lives_0)
+                    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
+
                 if numLives == 0:
                     lose = messagebox.showerror('HANGMAN', 'Niestety nie udało się zgadnąć hasła :(')
+                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?')
+                    if next_game == 1:
+                        numLives = 5
+                        user_word = []
+                        game.destroy()
+                        root.deiconify()
+                    else:
+                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?')
+                        if exit_mess == 1:
+                            game.destroy()
+                            root.destroy()
 
             else:
                 print("jest")
@@ -60,11 +88,20 @@ def game_window(word):
                     win = messagebox.showinfo('HANGMAN', 'GRATULACJĘ! Udało ci się zgadnąć hasło :)')
                     next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?')
                     if next_game == 1:
+                        numLives = 5
+                        user_word = []
                         game.destroy()
                         root.deiconify()
                     else:
-                        game.destroy()
-                        root.destroy()
+                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?')
+                        if exit_mess == 1:
+                            game.destroy()
+                            root.destroy()
+                        else:
+                            numLives = 5
+                            user_word = []
+                            game.destroy()
+                            root.deiconify()
 
         turn = letter
         test = Label(game, text="Kliknięcto literę -> " + letter).grid(row=2, columnspan=5)
@@ -197,21 +234,16 @@ def game_window(word):
             used_button(btn32, letter, 5, 15, 10, 10)
             check_pasword(word, letter)
 
-
-        if len(used_letter) == 32:
-            print("Prawda")
-
-        print("Użyte - >", used_letter)
-
-
     def back():
-        global used_letter
         global user_word
+        global numLives
 
-        used_letter = []
-        user_word = []
-        game.destroy()
-        root.deiconify()
+        areyousure = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść?')
+        if areyousure == 1:
+            numLives = 5
+            user_word = []
+            game.destroy()
+            root.deiconify()
 
     root.withdraw()
     game = Toplevel()
@@ -220,6 +252,25 @@ def game_window(word):
 
     logoLabelGame = Label(game, image=logo)
     logoLabelGame.grid(row=0, columnspan=16, padx=(289, 289), pady=(60, 60))
+
+    # Live Graphics
+    global num_lives_0
+    global num_lives_1
+    global num_lives_2
+    global num_lives_3
+    global num_lives_4
+    global num_lives_5
+
+    num_lives_0 = ImageTk.PhotoImage(Image.open('files/numLives_0.png'))
+    num_lives_1 = ImageTk.PhotoImage(Image.open('files/numLives_1.png'))
+    num_lives_2 = ImageTk.PhotoImage(Image.open('files/numLives_2.png'))
+    num_lives_3 = ImageTk.PhotoImage(Image.open('files/numLives_3.png'))
+    num_lives_4 = ImageTk.PhotoImage(Image.open('files/numLives_4.png'))
+    num_lives_5 = ImageTk.PhotoImage(Image.open('files/numLives_5.png'))
+
+    # Display Lives Graphics
+    numLivesLabel = Label(game, image=num_lives_5)
+    numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
 
     # Letters Buttons
     width_btn = 40
@@ -376,8 +427,6 @@ def cat_sport():
     for _ in word:
         user_word.append("_")
 
-    numLives = 5
-
     game_window(word)
 
 def cat_math():
@@ -385,8 +434,6 @@ def cat_math():
 
     for _ in word:
         user_word.append("_")
-
-    numLives = 5
 
     game_window(word)
 
@@ -396,8 +443,6 @@ def cat_music():
     for _ in word:
         user_word.append("_")
 
-    numLives = 5
-
     game_window(word)
 
 def cat_literature ():
@@ -406,8 +451,6 @@ def cat_literature ():
     for _ in word:
         user_word.append("_")
 
-    numLives = 5
-
     game_window(word)
 
 def cat_movies_and_series():
@@ -415,8 +458,6 @@ def cat_movies_and_series():
 
     for _ in word:
         user_word.append("_")
-
-    numLives = 5
 
     game_window(word)
 
