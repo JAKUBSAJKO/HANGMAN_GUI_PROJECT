@@ -1,16 +1,30 @@
 from tkinter import *
 from PIL import ImageTk, Image
 from tkinter_custom_button import TkinterCustomButton
+from tkinter import messagebox
 
 root = Tk()
 root.geometry("980x540")
+def test():
+    def true():
+        lal = Label(game, text='działa niestety').pack()
 
-img = ImageTk.PhotoImage(Image.open('files/logo.png'))
-myLabel = Label(root, image=img)
-myLabel.grid(row=0, columnspan=16, padx=(289, 289), pady=(80, 60))
+    root.withdraw()
 
-img2 = ImageTk.PhotoImage(Image.open('files/numLives_1.png'))
-myLabel1 = Label(root, image=img2)
-myLabel1.grid(row=0, columnspan=16, padx=(800, 0), pady=(60, 0))
+    game = Toplevel()
+    game.geometry("980x540")
+
+    btn = Button(game, text='click again!', command=true).pack()
+
+    test1 = messagebox.askyesno("TEST", "TAK", parent=game)
+
+    if test1 == 1:
+        myLabel = Label(game, text='TAK').pack()
+    else:
+        myLabel = Label(game, text="NIE").pack()
+
+
+btn = Button(root, text="Click!", command=test).pack()
+
 
 root.mainloop()

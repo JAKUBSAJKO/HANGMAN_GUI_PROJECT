@@ -63,18 +63,23 @@ def game_window(word):
                     numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
 
                 if numLives == 0:
-                    lose = messagebox.showerror('HANGMAN', 'Niestety nie udało się zgadnąć hasła :(')
-                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?')
+                    lose = messagebox.showerror('HANGMAN', 'Niestety nie udało się zgadnąć hasła :(', parent=game)
+                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?', parent=game)
                     if next_game == 1:
                         numLives = 5
                         user_word = []
                         game.destroy()
                         root.deiconify()
                     else:
-                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?')
+                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?', parent=game)
                         if exit_mess == 1:
                             game.destroy()
                             root.destroy()
+                        else:
+                            numLives = 5
+                            user_word = []
+                            game.destroy()
+                            root.deiconify()
 
             else:
                 print("jest")
@@ -85,15 +90,15 @@ def game_window(word):
                 displayPasswordLabel.grid(row=1, columnspan=16)
 
                 if "".join(user_word).lower() == word:
-                    win = messagebox.showinfo('HANGMAN', 'GRATULACJĘ! Udało ci się zgadnąć hasło :)')
-                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?')
+                    win = messagebox.showinfo('HANGMAN', 'GRATULACJĘ! Udało ci się zgadnąć hasło :)', parent=game)
+                    next_game = messagebox.askyesno('HANGMAN', 'Czy chcesz zagrać jeszcze raz?', parent=game)
                     if next_game == 1:
                         numLives = 5
                         user_word = []
                         game.destroy()
                         root.deiconify()
                     else:
-                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?')
+                        exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?', parent=game)
                         if exit_mess == 1:
                             game.destroy()
                             root.destroy()
@@ -238,7 +243,7 @@ def game_window(word):
         global user_word
         global numLives
 
-        areyousure = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść?')
+        areyousure = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść?', parent=game)
         if areyousure == 1:
             numLives = 5
             user_word = []
