@@ -461,6 +461,34 @@ def game_window(word):
 
     game.protocol("WM_DELETE_WINDOW", back)
 
+def game_rules():
+
+    def back_from_gr():
+        game_rules.destroy()
+        root.deiconify()
+
+    global icon
+    global gr_graphic
+
+    root.withdraw()
+    game_rules = Toplevel()
+    game_rules.title("HANGMAN")
+    game_rules.resizable(width=FALSE, height=FALSE)
+    inTheCenter(game_rules)
+
+    # Icon
+    game_rules.tk.call('wm', 'iconphoto', game_rules._w, icon)
+
+    gr_graphic = ImageTk.PhotoImage(Image.open('files/game_rules.png'))
+    grLabel = Label(game_rules, image=gr_graphic)
+    grLabel.grid(row=0)
+
+    backBtn = TkinterCustomButton(master=game_rules, text="WRÓĆ", command=back_from_gr, hover_color="#730000", fg_color="#9a0000",
+                                   width=100, height=40, corner_radius=10, text_font=("montserrat", 10, "bold"))
+    backBtn.grid(row=0, pady=(440,0))
+
+    game_rules.protocol("WM_DELETE_WINDOW", back_from_gr)
+
 def exit_game():
     exit = messagebox.askyesno("HANGMAN", "Czy na pewno chcesz zamknąć grę?")
     if exit == 1:
@@ -569,8 +597,12 @@ cat5 = TkinterCustomButton(text="FILMY\nI SERIALE", command=cat_movies_and_serie
                            text_font=("montserrat", 10, "bold"))
 cat5.grid(row=2, column=4, padx=(0, 60))
 
-exitBtn = TkinterCustomButton(text="EXIT", command=exit_game, hover_color="#730000", fg_color="#9a0000", width=120,
+rulesBtn = TkinterCustomButton(text="ZASADY GRY", command=game_rules, hover_color="#174363", fg_color="#295e86",
+                               width=120, height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
+rulesBtn.grid(row=3, columnspan=5, padx=(50,220), pady=(80, 0))
+
+exitBtn = TkinterCustomButton(text="WYJDŹ", command=exit_game, hover_color="#730000", fg_color="#9a0000", width=120,
                               height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
-exitBtn.grid(row=3, column=2, pady=(90, 0))
+exitBtn.grid(row=3, columnspan=5, padx=(170, 0), pady=(80, 0))
 
 root.mainloop()
