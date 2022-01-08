@@ -10,9 +10,24 @@ word = ''
 user_word = []
 numLives = 5
 
+def inTheCenter(master):
+    window_height = 540
+    window_width = 980
+    screen_width = master.winfo_screenwidth()
+    screen_height = master.winfo_screenheight()
+    x_cordinate = int((screen_width / 2) - (window_width / 2))
+    y_cordinate = int((screen_height / 2) - (window_height / 2))
+    master.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate-10, y_cordinate-16))
+
+# Main Window
 root = Tk()
 root.title("HANGMAN")
-root.geometry("980x540")
+root.resizable(width=FALSE, height=FALSE)
+inTheCenter(root)
+
+# Icon
+icon = PhotoImage(file='files/icon.png')
+root.tk.call('wm', 'iconphoto', root._w, icon)
 
 # Function
 def game_window(word):
@@ -250,10 +265,17 @@ def game_window(word):
             game.destroy()
             root.deiconify()
 
+    global user_word
+
     root.withdraw()
     game = Toplevel()
     game.title("HANGMAN")
-    game.geometry("980x540")
+    game.resizable(width=FALSE, height=FALSE)
+    inTheCenter(game)
+
+    # Icon
+    iconGame = PhotoImage(file='files/icon.png')
+    game.tk.call('wm', 'iconphoto', game._w, icon)
 
     logoLabelGame = Label(game, image=logo)
     logoLabelGame.grid(row=0, columnspan=16, padx=(289, 289), pady=(60, 60))
@@ -419,6 +441,8 @@ def game_window(word):
     exitBtn = TkinterCustomButton(master=game, text="EXIT", command=back, hover_color="#730000", fg_color="#9a0000",
                                   width=120, height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
     exitBtn.grid(row=6, columnspan=16, pady=(20, 10))
+
+    game.protocol("WM_DELETE_WINDOW", back)
 
 
 def exit_game():

@@ -5,26 +5,15 @@ from tkinter import messagebox
 
 root = Tk()
 root.geometry("980x540")
-def test():
-    def true():
-        lal = Label(game, text='działa niestety').pack()
 
+def new():
     root.withdraw()
-
-    game = Toplevel()
-    game.geometry("980x540")
-
-    btn = Button(game, text='click again!', command=true).pack()
-
-    test1 = messagebox.askyesno("TEST", "TAK", parent=game)
-
-    if test1 == 1:
-        myLabel = Label(game, text='TAK').pack()
-    else:
-        myLabel = Label(game, text="NIE").pack()
+    root1 = Toplevel()
+    root1.geometry("980x540")
 
 
-btn = Button(root, text="Click!", command=test).pack()
 
+
+btn = Button(root, text='Click me!', command=new).pack()
 
 root.mainloop()
