@@ -29,7 +29,7 @@ inTheCenter(root)
 icon = PhotoImage(file='files/icon.png')
 root.tk.call('wm', 'iconphoto', root._w, icon)
 
-# Function
+# Game Window
 def game_window(word):
     def letter_info(letter):
         def used_button(button, letter, row, col, px, py):
@@ -85,6 +85,14 @@ def game_window(word):
                         user_word = []
                         game.destroy()
                         root.deiconify()
+
+                        if len(words.sport) == 0 and len(words.matematyka) == 0 and len(words.muzyka) == 0 and len(
+                                words.literatura) == 0 \
+                                and len(words.filmy_seriale) == 0:
+                            end_game = messagebox.showinfo(
+                                "HANGMAN", "Niestety wyczerpałeś wszystkie hasła :(\nGra zostanie zamknięta.")
+                            root.destroy()
+
                     else:
                         exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?', parent=game)
                         if exit_mess == 1:
@@ -112,6 +120,15 @@ def game_window(word):
                         user_word = []
                         game.destroy()
                         root.deiconify()
+
+                        if len(words.sport) == 0 and len(words.matematyka) == 0 and len(words.muzyka) == 0 and len(
+                                words.literatura) == 0 \
+                                and len(words.filmy_seriale) == 0:
+
+                            end_game = messagebox.showinfo(
+                                "HANGMAN", "Niestety wyczerpałeś wszystkie hasła :(\nGra zostanie zamknięta.")
+                            root.destroy()
+
                     else:
                         exit_mess = messagebox.askyesno('HANGMAN', 'Czy na pewno chcesz wyjść do pulpitu?', parent=game)
                         if exit_mess == 1:
@@ -444,14 +461,23 @@ def game_window(word):
 
     game.protocol("WM_DELETE_WINDOW", back)
 
-
 def exit_game():
     exit = messagebox.askyesno("HANGMAN", "Czy na pewno chcesz zamknąć grę?")
     if exit == 1:
         root.destroy()
 
+def empty_cat():
+    empty = messagebox.showerror("HANGMAN", "Niestety wykoszystałeś wszyskie hasła z tej kategorii.\nWybierz inną kategorię!")
+
 def cat_sport():
     word = random.choice(words.sport)
+    words.sport.remove(word)
+
+    if len(words.sport) == 0:
+        cat1 = TkinterCustomButton(text="SPORT", command=empty_cat, hover_color="#740800", fg_color="#740800",
+                                   width=140,
+                                   height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
+        cat1.grid(row=2, column=0, padx=(60, 0))
 
     for _ in word:
         user_word.append("_")
@@ -460,6 +486,13 @@ def cat_sport():
 
 def cat_math():
     word = random.choice(words.matematyka)
+    words.matematyka.remove(word)
+
+    if len(words.matematyka) == 0:
+        cat2 = TkinterCustomButton(text="MATEMATYKA", command=empty_cat, hover_color="#740800", fg_color="#740800",
+                                   width=140,
+                                   height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
+        cat2.grid(row=2, column=1)
 
     for _ in word:
         user_word.append("_")
@@ -468,6 +501,13 @@ def cat_math():
 
 def cat_music():
     word = random.choice(words.muzyka)
+    words.muzyka.remove(word)
+
+    if len(words.muzyka) == 0:
+        cat3 = TkinterCustomButton(text="MUZYKA", command=empty_cat, hover_color="#740800", fg_color="#740800",
+                                   width=140,
+                                   height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
+        cat3.grid(row=2, column=2)
 
     for _ in word:
         user_word.append("_")
@@ -476,6 +516,12 @@ def cat_music():
 
 def cat_literature ():
     word = random.choice(words.literatura)
+    words.literatura.remove(word)
+
+    if len(words.literatura) == 0:
+        cat4 = TkinterCustomButton(text="LITERATURA", command=empty_cat, hover_color="#740800", fg_color="#740800",
+                                   width=140, height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
+        cat4.grid(row=2, column=3)
 
     for _ in word:
         user_word.append("_")
@@ -484,6 +530,13 @@ def cat_literature ():
 
 def cat_movies_and_series():
     word = random.choice(words.filmy_seriale)
+    words.filmy_seriale.remove(word)
+
+    if len(words.filmy_seriale) == 0:
+        cat5 = TkinterCustomButton(text="FILMY\nI SERIALE", command=empty_cat, hover_color="#740800",
+                                   fg_color="#740800", width=140, height=60, corner_radius=10,
+                                   text_font=("montserrat", 10, "bold"))
+        cat5.grid(row=2, column=4, padx=(0, 60))
 
     for _ in word:
         user_word.append("_")
@@ -499,20 +552,20 @@ questionLabel = Label(root, text="Jaką kategorię wybierasz?", font=("montserra
 questionLabel.grid(row=1, columnspan=5, padx=(289, 289), pady=(20, 40))
 
 # Buttons Category
-cat1 = TkinterCustomButton(text="SPORT", command=cat_sport, hover_color="#808080", fg_color="#4d4d4d", width=140,
+cat1 = TkinterCustomButton(text="SPORT", command=cat_sport, hover_color="#346202", fg_color="#4f9107", width=140,
                            height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
 cat1.grid(row=2, column=0, padx=(60, 0))
-cat2 = TkinterCustomButton(text="MATEMATYKA", command=cat_math, hover_color="#808080", fg_color="#4d4d4d", width=140,
+cat2 = TkinterCustomButton(text="MATEMATYKA", command=cat_math, hover_color="#346202", fg_color="#4f9107", width=140,
                            height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
 cat2.grid(row=2, column=1)
-cat3 = TkinterCustomButton(text="MUZYKA", command=cat_music, hover_color="#808080", fg_color="#4d4d4d", width=140,
+cat3 = TkinterCustomButton(text="MUZYKA", command=cat_music, hover_color="#346202", fg_color="#4f9107", width=140,
                            height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
 cat3.grid(row=2, column=2)
-cat4 = TkinterCustomButton(text="LITERATURA", command=cat_literature, hover_color="#808080", fg_color="#4d4d4d",
+cat4 = TkinterCustomButton(text="LITERATURA", command=cat_literature, hover_color="#346202", fg_color="#4f9107",
                            width=140, height=60, corner_radius=10, text_font=("montserrat", 10, "bold"))
 cat4.grid(row=2, column=3)
-cat5 = TkinterCustomButton(text="FILMY\nI SERIALE", command=cat_movies_and_series, hover_color="#808080",
-                           fg_color="#4d4d4d", width=140, height=60, corner_radius=10,
+cat5 = TkinterCustomButton(text="FILMY\nI SERIALE", command=cat_movies_and_series, hover_color="#346202",
+                           fg_color="#4f9107", width=140, height=60, corner_radius=10,
                            text_font=("montserrat", 10, "bold"))
 cat5.grid(row=2, column=4, padx=(0, 60))
 

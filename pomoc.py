@@ -6,14 +6,9 @@ from tkinter import messagebox
 root = Tk()
 root.geometry("980x540")
 
-def new():
-    root.withdraw()
-    root1 = Toplevel()
-    root1.geometry("980x540")
-
-
-
-
-btn = Button(root, text='Click me!', command=new).pack()
+test = messagebox.showinfo("test", 'test')
+print(test)
+if test == 'ok':
+    label = Label(root, text='ttttt').pack()
 
 root.mainloop()
