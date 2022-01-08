@@ -56,7 +56,6 @@ def game_window(word):
 
             if len(found_indexes) == 0:
                 numLives -= 1
-                print("Liczba żyć", numLives)
 
                 if numLives == 4:
                     numLivesLabel = Label(game, image=num_lives_4)
@@ -107,7 +106,6 @@ def game_window(word):
                             root.deiconify()
 
             else:
-                print("jest")
                 for index in found_indexes:
                     user_word[index] = letter
 
@@ -315,10 +313,6 @@ def game_window(word):
     numLivesLabel = Label(game, image=num_lives_5)
     numLivesLabel.grid(row=0, columnspan=16, padx=(680, 0), pady=(60, 0))
 
-    # Letters Buttons
-    width_btn = 40
-    height_btn = 60
-
     # Display Password
     displayPasswordLabel = Label(game, text=" ".join(user_word), font=("montserrat", 44, "bold"))
     displayPasswordLabel.grid(row=1, columnspan=16)
@@ -328,6 +322,11 @@ def game_window(word):
     categoryLabel = Label(game, text="KATEGORIA: " + category, font=("montserrat", 10, "italic"))
     categoryLabel.grid(row=2, columnspan=16, pady=(10,0), sticky='we')
 
+    # Letters Buttons - Width And Height
+    width_btn = 40
+    height_btn = 60
+
+    # Letters Buttons
     btn1 = TkinterCustomButton(master=game, text="A", command=lambda: letter_info("A"), hover_color="#a85c16",
                                fg_color="#d87215", text_color="#ffffff", width=width_btn, height=height_btn,
                                corner_radius=0, text_font=("montserrat", 14, "bold"))
@@ -457,14 +456,14 @@ def game_window(word):
                                 corner_radius=0, text_font=("montserrat", 14, "bold"))
     btn32.grid(row=5, column=15)
 
-    exitBtn = TkinterCustomButton(master=game, text="EXIT", command=back, hover_color="#730000", fg_color="#9a0000",
+    exitBtn = TkinterCustomButton(master=game, text="WYJDŹ", command=back, hover_color="#730000", fg_color="#9a0000",
                                   width=120, height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
     exitBtn.grid(row=6, columnspan=16, pady=(10, 10))
 
+    # X Button Event
     game.protocol("WM_DELETE_WINDOW", back)
 
 def game_rules():
-
     def back_from_gr():
         game_rules.destroy()
         root.deiconify()
@@ -485,10 +484,12 @@ def game_rules():
     grLabel = Label(game_rules, image=gr_graphic)
     grLabel.grid(row=0)
 
-    backBtn = TkinterCustomButton(master=game_rules, text="WRÓĆ", command=back_from_gr, hover_color="#730000", fg_color="#9a0000",
-                                   width=100, height=40, corner_radius=10, text_font=("montserrat", 10, "bold"))
-    backBtn.grid(row=0, pady=(440,0))
+    backBtn = TkinterCustomButton(master=game_rules, text="WRÓĆ", command=back_from_gr, hover_color="#730000",
+                                  fg_color="#9a0000", width=100, height=40, corner_radius=10,
+                                  text_font=("montserrat", 10, "bold"))
+    backBtn.grid(row=0, pady=(440, 0))
 
+    # X Button Event
     game_rules.protocol("WM_DELETE_WINDOW", back_from_gr)
 
 def exit_game():
@@ -613,11 +614,9 @@ cat5 = TkinterCustomButton(text="FILMY\nI SERIALE", command=cat_movies_and_serie
                            fg_color="#4f9107", width=140, height=60, corner_radius=10,
                            text_font=("montserrat", 10, "bold"))
 cat5.grid(row=2, column=4, padx=(0, 60))
-
 rulesBtn = TkinterCustomButton(text="ZASADY GRY", command=game_rules, hover_color="#174363", fg_color="#295e86",
                                width=120, height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
 rulesBtn.grid(row=3, columnspan=5, padx=(50,220), pady=(80, 0))
-
 exitBtn = TkinterCustomButton(text="WYJDŹ", command=exit_game, hover_color="#730000", fg_color="#9a0000", width=120,
                               height=46, corner_radius=10, text_font=("montserrat", 10, "bold"))
 exitBtn.grid(row=3, columnspan=5, padx=(170, 0), pady=(80, 0))
