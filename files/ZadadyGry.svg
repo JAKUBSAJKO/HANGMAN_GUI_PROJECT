@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="980"
+   height="540"
+   viewBox="0 0 259.29166 142.875"
+   version="1.1"
+   id="svg5471"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ZadadyGry.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5473"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.92648709"
+     inkscape:cx="712.36826"
+     inkscape:cy="560.72017"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0,142.875"
+       orientation="0,980"
+       id="guide5532" />
+    <sodipodi:guide
+       position="259.29166,142.875"
+       orientation="540,0"
+       id="guide5534" />
+    <sodipodi:guide
+       position="259.29166,0"
+       orientation="0,-980"
+       id="guide5536" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-540,0"
+       id="guide5538" />
+  </sodipodi:namedview>
+  <defs
+     id="defs5468" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Warstwa 2"
+     style="opacity:0">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.79375;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect33384"
+       width="259.29166"
+       height="142.875"
+       x="0"
+       y="-1.8367347e-06"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="opacity:1">
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:8.46667px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';stroke-width:0.264583"
+       x="99.864365"
+       y="12.798054"
+       id="text6262"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan6260"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="99.864365"
+         y="12.798054">ZASADY GRY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:5.64444px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="28.356567"
+       y="30.5592"
+       id="text9440"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold Italic';stroke-width:0.264583"
+         x="28.356567"
+         y="30.5592"
+         id="tspan9444">Wybierz 1 z 5 kategorii z której pochodzić będzie hasło. Po wybraniu </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold Italic';stroke-width:0.264583"
+         x="28.356567"
+         y="37.61475"
+         id="tspan10372">kategorii musisz odgadnąć hasło. Masz na to 5 żyć. Hasło zgadujesz </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold Italic';stroke-width:0.264583"
+         x="28.356567"
+         y="44.6703"
+         id="tspan10374">klikając w litery. Wykorzystane litery zmieniają kolor na czerwony.</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.559299,18.152688 H 246.73237"
+       id="path10809"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:8.46667px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Heavy';stroke-width:0.264583"
+       x="101.98104"
+       y="65.94899"
+       id="text17413"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan17411"
+         style="font-size:8.46667px;stroke-width:0.264583"
+         x="101.98104"
+         y="65.94899">STATUS ŻYĆ</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.559299,71.303622 H 246.73237"
+       id="path17415"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="18.759493"
+       height="26"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAABPCAYAAABRY21ZAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA
+GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABStJREFUeJzt3GnIFVUYB/CfaWaL
+pZZ+aLWUpLBoQWwxoWiBoIiKNoIo2hfKkIroS/ShPhRFIRUE7QsVrRRFUOKHVlspFbJNUiszTTH3
+7MMzN+deZ+69770z97339f3DA2d5Zub85zlzluecM0M0j3NxWxL+GNfX5E/GE0l4JR5J6a/GKdiU
+0n8d+yThJ3FJnWdfjq9wLG7F8dgDv+M7PIen+sAlF9dgSyLvZuRPTeUvwxj8k0o7O6U7PZX+Lc5J
+xbNkGk7Ehpz89+oVfFgfifYFf+F5XJbEr8IrSfialN6smuuW4s2atN/wIHZM4m/hA+yHs/BwvYKU
+SZIgUCF5MiZgja1WXYVncGrqmj/xUiq+DAtF9axgKJbgWdxcZIH7Wl0r+DCVfg/uSMUfSnTqVdfX
+Ep2bcvK/UP2S2kKrJC9Opf+ORUn4XxyS6DRDEq7Ap9hco7MeE/MKvkPTFFvHS/gjCY8T3xG8j/kZ
++nMwJCVnJek7iWo7FWNxnnhhMFy0uJlo9Zs8AT+k4itwXY7uejyG22vSaxucCo7C3Jq0uzESj+NH
+fI21GJXS+blRoZtBurrWyjL51RX2x8ZU/iLVL7hRF3I1PqmT/6KweiaaseT+id5KvJCjswYjUvlr
+cFCNzr0Yn4Q/TO5bwYY695Y8ewbOwCTsLaroEtE+vI0DE91VooXuE5ar/5a7TR6tJdCo4Rmqut73
+JBqR3KsJna5HIwJjO1KKkjFIUlTXnsegJQ2S7B0MkjRIsnew3XchQ7BnpwpSJuqRHGWrd6ynUY/k
+gPge2U5I1vMMFN3ovIwrC75nFtbXJtQjOa7ghy8VDq+Oo5PV9a+C79c0tnuSRX+TXUmyaEsuL/h+
+TaOTrevBwsFcixXCG77Mtk7pQpDrdcYvqh3AncAmLMYCzBOry3MUtASQhfQqcX/LL2IRdpr6hukT
+du0CYnnyvVgbGdEuyfFdQKaR/Irz2yE5pQtINCtvaTAlzOtCemlwfjo+w2F5CgOBJLFsN0eskW6D
+PJK96PYYhXds3YfwPwaKJSsYhTcwOp2YR7LoaVYnMVH0qf9jIFXXNC7GaZXIQLRkBXdLRkd5JAeC
+K/JI0b0MaEvCpWQPdofLcAb1KNZjXJYle7X7yMJOmJY1aR4ptnYVhZFicj5czG46jemFzc2axC5i
+A+EkHCdmEeNLfmbtBuGOY6jY0bxGebOUeR1j0wAXKo9kKX6jVjBEtANlkFzbLVvKyqxWQxttBZ0p
+3IiPKL/vHN1YpSXUXX/ZTXi9twiX4A3K6wL2kX/mo11ZUO/BN2ZcsBz3q+NqaAE7isluWQ3P7LwH
+D8NPDS7+BnfhGDGyaAWHqj5SUYbclzcYuECczmkWGwXpuYnMF57wP4STuoKxYtv2FJwpDsSUPSC5
+IC9jrmLfZlnfWyPZjH2zCJ7UTwUqQz4gez45M4t5j+LprMTJ4nhRf1ugCPkTu7OtJWcqvyHoFO4R
+Z0SqsLcY1fS3BYqQxWJah2pL3igmtr2OLbhWddeFmL2v0P8WKEIeyGM/owsKV4R8JGf0NUwsV/d3
+AduVueKweCYu6oICFmHB9JnnbfB5FxSyHZmlif0Dh+NVvTcIWCF+8NAnHC2GQeu6gEA92SQ8FW0t
+ZYzFLfiyCwilZbPwoU5uh1wWJor/d8zWfxZehDtxQKsk+jJO3Vl4vU/AEWJprIxtaetEazlbHNP/
+SFixZbQ7GB8jXP4ThNXHi1XqvcQ3UzkqXFkPWSXGx6uF1/xvcZS/IguFh2Fdm+Wqwn8IvMQvZ3rP
+HQAAAABJRU5ErkJggg==
+"
+       id="image17647"
+       x="20.965086"
+       y="78.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="18.40708"
+       height="26"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABxCAYAAABC4SQ+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA
+GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAACLRJREFUeJztnX1sXWUdxz/PuW1v
+X/Zy27Xd1q1Lixt0bVnDtkxAIB1QdQync3EEg5CpJJsaYoyJRjK3YGZwZlGCMcbFRIgmoIgDgSyK
+EYYaEhw0bKWbLzBYrZB1fWN0fbvn8Y9zzr23597b23ve7nnC+SbNc/K83V8/fZ7nPOf3/O6pwCN1
+LuELMsajXvXntQQcOz3CTq/71bzu8MOmCKBLlXnVkaYxlpyb1Qu84VX/WRJUIdkp4GUJbxaqLiWv
++GGGZwB1ySBiTtbjfSM86FX/dq2vZ6WWZKeU/KxvlEf8+pxCiqawS0UAXSoC6FIRQJeKALpUBNCl
+IoAuFQF0qQigS0UAXUpdgDq3AQjBtlKaoSzAmGQrgISrS2mHsgARXAaQMF1KM5QFKDX+oAkGheR3
+pbRDSYAbFtFIkjul5C8I2jsaWFEqW5QEOFvOEQTfOz3CXVLyQ5L8alMT1aWwRUmAAhJ9w4a3+41R
+XpM6D09e5r5S2KIiQA1JPDOjapTnEGwpjTHqSUdwrKOOH6+tY0k3lE3VcT9wvBTGqAiQvhF+qgue
+iev84kItT0qdc33D/LwUtnh2qBS0+i/yPPB8qe1QcgReBYuB9cBGYFUpbVEK4NGDBx841NR0YTUM
+Y5w5nwQGHoCpR/bu7f3Gnj3NQdukBMC1ED/Y1dX/5QMH9q+rrKwXtqUnARU3dnd37d2+/e2tsCtI
+21QAqLXCiS3LlrUVqriotlbcAU8A1wZgF6AGwK/WsPA9XjmgwW+AKv9MSivsACuB7zpo1wx8xWNb
+cirsAHuAentmDdCQ8ZMKyRFzgnPu8Nk2IPwAN1sXzbffzsDx47Ts2sUO4MGMn4bmZsqXLCE5OUmi
+vd1qspEA9rlhB1gPEK+uJhaP88dt20h0dGRVWrNjB6/u38/f9+2jdfduKzsG1PltYNifREYApiYm
+mBoa4oajR7l48mRWpXeefppNhw4hdZ1Thw9b2Tow6reBYQf4unXx6oEDxhonJU8AL2ZU+sH585y4
+++5UuakzBODuDzvA48AHGPeNFJwZYCKjUgpZGh4Y+0HfFfY1cBw44qDdCPCQx7bkVNgBAhyagn8u
+tLIEBOzBeF72XSoAnD4DN52FCwUrAifgoSQ8FYBdgBoAeQveOwwrn4QjQzAzbiufBXkGzj0F1z8K
+Xy+JkW7VuZTNHbXIjJ9v+/VZdXAvxmyVwMlbYJlfn1VISoxAu4aNLYqlkT/DxVLZoiRAYHnGdQ2G
+E6YkUglgeRc83Ar/An6bkX+tBgPXw0t1hhcmUKkC8BPA2Ub4mgZrc5Q3roIbJPQD92E8BwciFQD2
+AM8ArQuoW4Oxge4F2xfPfJIKAH9J8Y+cncDugrU8UNgB1gIrHbbd4aUh+RR2gDtxPhWv89KQfAo7
+wM+5aNsCNHpkR16FGeAS4GYMx6gTCbO9rwozwB6gArjkoo9bPbIlr8IM8DYztfsOitGHdgQK4JPm
+dUE3Vh4NY+wdfY2fDivAa4Am4DQw5LAP64UXH/XEojzyDKCmZYVSJFx0t91MnwXed9jHa2a60YUd
+BeUZQD17y3GPi+4+ZqZ/wjnAfjNd7cKOgvIKoJCST9vyVqxf6viv32WmvTi7CydJT2FfAzA9AdiR
+oBvBmqzONfY46K4BY+EfwHCUOhmB7wHnzesmB+0XLG9GoODePCV3Xbe66DCzq8zUmoJjDiwaAAYx
+XP7hHoFti1kGed+Klhj/gM8U2aXltnrLTP/nwKyzwCTG+XAdPsYKugYYK+cejDi+nBKSLxbZpQXw
+nJkOOjDrrK2tb3tB91NY8qV5iwW3XL2UK4ro0XLLv22m/3VglQXQOmzyLUrLFcDOOpqB9gLVhIzR
+XUS31qJvjR4nAK1TuxEzrXXQx4LkKrhoVicWW4C3ThZ3RmE5UC2AY1shqUGsCrgSw09l12WMaMwk
+cAbeNBtb4R2+jcAwRmfVYdw9UzePSzBeDrWX52lklc3A2GA6eMvayjh1iRVUGAHejxFpkNr/vQIv
+kP9Ob9exjOvDwMsYTzS+KIwAf50jr5eFA3wp43oCn7/FGVZvjF3PFVH3hG9W5JAqAP8B/HUB9X6P
+EbkQmFQBCLAXmJ2nfBb4TkC2pKQSwD7gP/bMjF3U95kbtRWIwngTyacqoFXAhDRuDK1AmYRF5vU7
+pTBKpRG4CaiIGevhLgxP8wbgm2b5jaUwSiWAVqTBi7Z8a9sSASygjQCz8Ddb/oUK45HtCgxnbKBS
+CeB6M+2zF8Th3+blhuDMMaQKQA1YFzO2KlneGS19AtdlL/NbqgBsBKrjhntK2gun0pvsKwO1CnUA
+LgfQ8kTjT6YdqIG/AkUpgALezVNu+Q59PYHLJVUAJgD0/ACt+Jms1wP4LVUAVgJM5w80mhaGM7om
+OJMMqQIwDjCTPuPIkjCc0osCs8iUKgAtn8F8rvlLGKAD/Z1C7UzoXMpH0Pjs+AxbJmYhHuOmRAXf
+AiRi7vsQ3p1A0yWsqGafJpjSNZ7tH3J0KF+UQg1QavwI+NTiclhsfBvuZqyoU9tucEU69uAnSNB0
+tuEsqqEohX0KO17ThI8ncZkKN0CZ7UBdaEsh/R99EHKADaPsE9BFkjtTmUk+r+ls1nQ2S51bdY0e
+BI+ZpQO6Rg+Sa06NcCoIG0O9Br4As4zwenuCVACEFuO0HU5HLR83L983Xw0amEI9Ai3FZNrOpMhe
+20S6PJB1L1NKANTL0nbGBEl7uTR/j6BuHJlSAqDMsHMmxwhEM8ol2XD9lhIANZmO7opN5wBolcsI
+YE7JjDVQyzUCidbAeaXL+aewNcVljvXRbykBMMacm0j2XbiEN5F8+0DRVs+6Qo0lrFrQ31ywvK3e
++XlFcpY1qTlaRktb/dygdpmkVgBCUOHmc5woZ4BuSwuVNWPMFxAayZQSUzjMigC6VATQpSKALlVm
+ftdtjuSluf+zKFJ+lcXKcnylPvDtqLqKprBLRQBdKgLoUhFAl4oAutT/Aa+R4sd6fYseAAAAAElF
+TkSuQmCC
+"
+       id="image17659"
+       x="179.20546"
+       y="78.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="18.40708"
+       height="26"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+"
+       id="image17671"
+       x="139.73347"
+       y="78.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="18.40708"
+       height="26"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABxCAYAAABC4SQ+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA
+GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAxhJREFUeJzt3c2LTXEcx/H379wr
+Mx7HGM8PSWgeLShlN7JiwywsFAnZ+gcsbZSUUpKyIBsLmiJZTNkqCxYuO1nZeJgh8pB7fhYszIzr
+jj4/zjl8XsvfOfM7397dc7szt7k3kMjgAg7GGldS7ZdagNFH44yk3jdLveH/xgFF9VQbZRlvmpOX
+HgKPU+0/TaCTyEiAexGetjs9Ru7/iTGSBcwjzwmTlq41xjmVav+p+npYkTUZiZELjQku/6nrtONb
+WOSAIgcUOaDIAUUOKHJAkQOKHFDkgKLqBszZDRACu4oco7IBa5EdABGGipyjsgEJfACI8LnIMSob
+MGbczALPQ+R6kXNUMuDmeSylyf4YuUugf2AJy4uapZIBv8ziDIGTj8Y5ECOnaXJ160rmFDFLJQMG
+6Gq8/vbX7scTPIg55z5+4HgRs1QxYEZk9o8LnRPcJrCtmGGqJycwOtDN2Q3dLBiG+qduTgB3ihim
+igFpjHM+D9yanXPpxSJuxJxnjddcLGKWZG8q/W1PXjEGjBU9RyUfgWXigCIHFDmgyAFFDihyQJED
+ihxQ5IAiBxQ5oMgBRQ4ockCRA4ocUOSAIgcUOaDIAUUOKHJAkQOKHFDkgCIHFDmgyAFFDihyQFGy
+gFlG55SlrlR7l1mygDnsm7J0KNXeZZYqYIiRPVPWlvctZEui/UsrScCBLoYJrJ22ecbhFPuXWZpH
+YOBYiyMHtq+e9tz4T5ED9s5nMbT8VLSut+/Zq16jzOSAtVkcAjpaHQ+RI+o1yky/hSNHf3k4sHNo
+Ievl65SUFHCwmzVAf5vTQqwxrFynzKSAX3JqMzkvMrPzqsi/yokcUOSAIgcUOaDIAUUOKHJAkQOK
+HFDkgCIHFDmgyAFFDihyQJEDihxQ5IAiBxQ5oMgBRQ4ockCRA4ocUOSAIgcUOaDIAUUOKHJAkQOK
+Wn0UfOjtYWO7H46wima7s4DAst4eNv3eaNUQfra4bh0dc998+84i+zXfwiIHFDmgyAFF9e//6zZJ
+fDf5O4ustXqtzstpqzN5aWKAb2GZA4ocUOSAIgcUfQWIl3RiBD6VngAAAABJRU5ErkJggg==
+"
+       id="image17683"
+       x="100.26148"
+       y="78.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="18.40708"
+       height="26"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABxCAYAAABC4SQ+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA
+GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAjZJREFUeJzt3c+OS2Ech/Hve1ox
+IkzDJCT+ZCIhxdjY2U3iArCwIxPEvbgOOzv3YWOBS7CSTEaIjelrY9NWtfK8OOX5LN9z+ntPnvQ0
+7aJtSSM7J/OwDvK81bzWSvLyzX7utZ7btR74vzEgNGw1qOtycDi99DrJu1bzqVrz6nfMbRZwUvM+
+ZWrpxdv9PGs1v6+8hSEDQgaEDAgZEDIgZEDIgJABIQNCBoQMCBkQMiBkQMiAkAEhA0IGhAwIGRAy
+IGRAyICQASEDQgaEDAgZEDIgZEDIgJABIQNCBoQMCBkQMiBkQMiAkAEhA0IGhAwIGRAyIGRAyICQ
+ASEDQgaEDAg1C9h1OTazNGo1u8+aBZwk92eW9lrN7rNWAUutuTOzdvbqZm42mt9bTQJeH2U3JRfn
+hnd51GJ+n7V5BpY8XXDkwa3zc6+N/xQccHwip5OFv4o2+vg5d+kefYYDDo5kL8nGouOl5jHdo8/4
+LVzz5KeHS27f2MwlvE9PoYA7p3IhybUlp5U6yC7Zp89QwK+TDFY5r2a189aRH+UgA0IGhAwIGRAy
+IGRAyICQASEDQgaEDAgZEDIgZEDIgJABIQNCBoQMCBkQMiBkQMiAkAEhA0IGhAwIGRAyIGRAyICQ
+AaFF/y9cxlu5vOzBNTmXw2VnJSk5M97KlV+7tPVQfrS4vZ2N4wf58qcvZh15C0MGhAwIGRAafv+u
+25T6KUf/xsWso+FgmA9zq6u8NVESb2HMgJABIQNCBoS+Adn8Lr6IaOU1AAAAAElFTkSuQmCC
+"
+       id="image17695"
+       x="60.789486"
+       y="78.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <image
+       width="19.649124"
+       height="28"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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
+1OT/77cS0Fx2To8AAAAASUVORK5CYII=
+"
+       id="image17707"
+       x="218.67746"
+       y="77.673363"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="17.972946"
+       y="115.62109"
+       id="text18593"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan18591"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';stroke-width:0.264583"
+         x="17.972946"
+         y="115.62109">0 BŁĘDÓW</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="62.347645"
+       y="115.22528"
+       id="text21619"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan21617"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';stroke-width:0.264583"
+         x="62.347645"
+         y="115.22528">1 BŁĄD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="100.17287"
+       y="115.24221"
+       id="text21857"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan21855"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';stroke-width:0.264583"
+         x="100.17287"
+         y="115.24221">2 BŁĘDY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="139.67027"
+       y="115.22528"
+       id="text23367"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan23365"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';stroke-width:0.264583"
+         x="139.67027"
+         y="115.22528">3 BŁĘDY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="178.83957"
+       y="115.22528"
+       id="text23809"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan23807"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';stroke-width:0.264583"
+         x="178.83957"
+         y="115.22528">4 BŁĘDY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:800;font-size:4.23333px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Bold Italic';stroke-width:0.264583"
+       x="228.19934"
+       y="113.43247"
+       id="text25019"
+       inkscape:export-filename="C:\Users\48515\Desktop\game_rules.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan25017"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="228.19934"
+         y="113.43247">5 BŁĘDÓW</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:4.23333px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium Italic';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="228.19934"
+         y="118.72414"
+         id="tspan27161">KONIEC GRY</tspan></text>
+  </g>
+</svg>
